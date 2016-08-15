@@ -2,7 +2,7 @@ Vagrant.configure('2') do |config|
   config.ssh.forward_agent = true
 
   config.vm.define "app" do |node|
-    node.vm.box = "tweedegolf/ubuntu-16.04"
+    node.vm.box = "tweedegolf/debian-jessie"
     node.vm.synced_folder Dir.home, mount_homedir_location, type: "nfs", mount_options: mount_options
 
     node.vm.network :private_network, type: "dhcp"
@@ -30,6 +30,7 @@ Vagrant.configure('2') do |config|
     node.vm.provider "virtualbox" do |virtualbox|
       virtualbox.cpus = 2
       virtualbox.memory = 4096
+      virtualbox.customize ['modifyvm', :id, '--cableconnected1', 'on']
     end
 
     # Install docker
