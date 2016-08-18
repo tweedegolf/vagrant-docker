@@ -32,7 +32,7 @@ it was running on a linux machine. Note that the box only allows for projects
 in your user home folder. Files outside your user home cannot be read. You may
 want to change the `Vagrantfile` to be able to read these.
 
-### OSX
+### OSX/Linux
 To start working with projects you still need to point your local docker client
 to the virtual machine. To do this you can run the following command:
 
