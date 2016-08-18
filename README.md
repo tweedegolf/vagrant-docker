@@ -22,7 +22,7 @@ Then while inside the project directory run:
 This should start the box, and you should be ready to start using docker as if
 it was running on a linux machine. Note that the box only allows for projects
 in your user home folder. Files outside your user home cannot be read. You may
-want to change the dockerfile to be able to read these.
+want to change the `Vagrantfile` to be able to read these.
 
 ### OSX
 To start working with projects you still need to point your local docker client
