@@ -8,6 +8,14 @@ When using this project you'll still need to install the docker cli locally,
 and when working with compose you'll also need to install docker-compose
 locally.
 
+## Dependencies
+
+* [Virtualbox](https://www.virtualbox.org/)
+* [Vagrant](https://www.vagrantup.com/)
+* [Docker](https://www.docker.com/)
+* [Docker Compose](https://docs.docker.com/compose/) (optional)
+* [Packer](https://www.packer.io/) (optional, only for building the box)
+
 ## Usage
 The best way to work with this box is to start it when starting to work on any
 project. To do this simply clone this project using git or download the project
